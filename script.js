@@ -22,9 +22,9 @@ if(currentDay == 0) {
     day.innerHTML = 'Today is: Saturday'
 }
 
-//To get UTC Time
-const UTCSec = date.getUTCMilliseconds()
+function timer() {
+    const date = new Date();
+    let z = date.getTime();
+    UTCTime.innerHTML = z;
 
-//To display UTC TIME TO THE dom
-let UTC = `Current UTC Time is: ${UTCSec}`;
-UTCTime.innerHTML = UTC;
+}setTimeout(timer(), 1000)
